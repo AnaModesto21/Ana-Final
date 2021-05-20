@@ -25,15 +25,12 @@ function formatDate(date) {
   
   function displayWeatherC(response) {
     document.querySelector("#mCity").innerHTML = response.data.name;
-    document.querySelector("#mainDegreesMax").innerHTML = Math.round(response.data.main.temp);
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+    document.querySelector("#mainDegreesMax").innerHTML = Math.round(response.data.main.temp);
     document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("#type-Weather").innerHTML = response.data.weather[0].main;
-    iconElement.setAttribute(
-        "src",
-        `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-      );
-}
+    document.querySelector("#icon").setAttribute = (`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    }
   
   
   function showCity(event) {
