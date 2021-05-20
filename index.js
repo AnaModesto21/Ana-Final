@@ -26,7 +26,7 @@ function formatDate(date) {
   function displayWeatherC(response) {
     document.querySelector("#mCity").innerHTML = response.data.name;
     document.querySelector("#mainDegreesMax").innerHTML = Math.round(response.data.main.temp);
-  
+    document.querySelector("mainWeather").innerHTML = `http://openweathermap.org/img/wn/04d@2x.png`;
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   
     document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
