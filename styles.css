@@ -2,7 +2,7 @@
     text-align: right;
 }
 
-.mCity, .icon{
+.mCity{
     text-align: left;
     font-size: 60px;
     padding-left: 115px;
@@ -65,7 +65,12 @@
         color: black;
 
     }
-
+    .icon{
+        font-size: 80px;
+        text-align: justify;
+        padding-left: 115px;
+        margin-top: 0px;
+    }
     .footer, .name{
         text-align: center;
         font-family: Roboto Mono;
