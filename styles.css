@@ -118,16 +118,15 @@ a:link {
   a:active {
     text-decoration: underline;
   }
-
-  a:link #Ana{
-    color: #0f0e0e;
+  a:link.Ana {
+    color: whitesmoke;
   }
-  a:visited #Ana{
-    color: #0f0e0e;
+  a:visited {
+    color: whitesmoke;
   }
-  a:hover #Ana{
-    color: #0f0e0e;
+  a:hover {
+    color: whitesmoke;
   }
-  a:active #Ana{
-    color: #0f0e0e;
+  a:active {
+    color: whitesmoke;
   }
