@@ -84,24 +84,8 @@
         margin-right: 30px;
         color: black;
     }
-    
+
     .mainDegreesMax{
     font-weight: bolder;
     }
 
-  #Ana a:link {
-    color: whitesmoke;
-    text-decoration: none;
-  }
-  #Ana a:visited {
-    color: rgb(194, 184, 184);
-    text-decoration: none;
-  }
-  #Ana a:hover {
-    color: rgba(245, 245, 245, 0.63);
-    text-decoration: none;
-  }
-  #Ana a:active {
-    color: whitesmoke;
-    text-decoration: none;
-  }
