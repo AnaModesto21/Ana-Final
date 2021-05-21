@@ -29,7 +29,15 @@ function formatDate(date) {
     document.querySelector("#mainDegreesMax").innerHTML = Math.round(response.data.main.temp);
     document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("#type-Weather").innerHTML = response.data.weather[0].main;
-    document.querySelector("#icon").setAttribute = (`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    /*document.querySelector("#icon").setAttribute = (`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);*/
+
+
+    let iconElement = document.querySelector("#icon");
+    iconElement.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+    iconElement.setAttribute("alt", response.data.weather[0].description);
     }
   
   
