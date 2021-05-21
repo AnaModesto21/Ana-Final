@@ -85,16 +85,16 @@
         color: black;
     }
 
-    a:link {
+    a:link.fahrenheit-link {
         color: #0f0e0e;
       }
-      a:visited {
+      a:visited.fahrenheit-link {
         color: #0f0e0e;
       }
-      a:hover {
+      a:hover.fahrenheit-link {
         color: #0f0e0e;
       }
-      a:active {
+      a:active.fahrenheit-link {
         color: #0f0e0e;
       }
 
@@ -103,30 +103,32 @@
 }
 
 
-a:link {
+a:link.fahrenheit-link {
     text-decoration: none;
   }
   
-  a:visited {
+  a:visited.fahrenheit-link {
     text-decoration: none;
   }
   
-  a:hover {
+  a:hover.fahrenheit-link {
     text-decoration: underline;
   }
   
-  a:active {
+  a:active.fahrenheit-link {
     text-decoration: underline;
   }
+
+
   a:link.Ana {
     color: whitesmoke;
   }
-  a:visited {
+  a:visited.Ana {
     color: whitesmoke;
   }
-  a:hover {
+  a:hover.Ana {
     color: whitesmoke;
   }
-  a:active {
+  a:active.Ana {
     color: whitesmoke;
   }
