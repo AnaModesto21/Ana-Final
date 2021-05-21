@@ -97,6 +97,7 @@
       a:active {
         color: #0f0e0e;
       }
+
 .mainDegreesMax{
     font-weight: bolder;
 }
@@ -116,4 +117,17 @@ a:link {
   
   a:active {
     text-decoration: underline;
+  }
+
+  a:link #Ana{
+    color: #0f0e0e;
+  }
+  a:visited #Ana{
+    color: #0f0e0e;
+  }
+  a:hover #Ana{
+    color: #0f0e0e;
+  }
+  a:active #Ana{
+    color: #0f0e0e;
   }
