@@ -86,10 +86,10 @@
     }
 
     a:link {
-        color: #0f0e0e;
+        color: #f7f7f7;
       }
       a:visited {
-        color: #f7f7f7;
+        color: #0f0e0e;
       }
       a:hover {
         color: #f7f7f7;
