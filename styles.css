@@ -94,8 +94,8 @@
       a:hover {
         color: #0f0e0e;
       }
-      a:active {
-        color: #0f0e0e;
+      a:active #Ana{
+        color: whitesmoke;
       }
 .mainDegreesMax{
     font-weight: bolder;
