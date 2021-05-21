@@ -86,19 +86,19 @@
     }
 
     #fahrenheit-link a:link {
-        color: #0f0e0e;
+        color: #000000;
         text-decoration: none;
       }
     #fahrenheit-link a:visited {
-        color: #0f0e0e;
+        color: #000000;
         text-decoration: none;
       }
     #fahrenheit-link a:hover {
-        color: #0f0e0e;
+        color: #000000;
         text-decoration: underline;
       }
     #fahrenheit-link a:active {
-        color: #0f0e0e;
+        color: #000000;
         text-decoration: underline;
       }
 
