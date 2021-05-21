@@ -91,7 +91,9 @@
     .mainDegreesMax{
     font-weight: bolder;
     }
-
+    .a {
+        text-decoration: none;
+    }
   #Ana a:link {
     color: whitesmoke;
   }
