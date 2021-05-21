@@ -85,50 +85,36 @@
         color: black;
     }
 
-    a:link.fahrenheit-link {
+    #fahrenheit-link a:link {
         color: #0f0e0e;
+        text-decoration: none;
       }
-      a:visited.fahrenheit-link {
+    #fahrenheit-link a:visited {
         color: #0f0e0e;
+        text-decoration: none;
       }
-      a:hover.fahrenheit-link {
+    #fahrenheit-link a:hover {
         color: #0f0e0e;
+        text-decoration: underline;
       }
-      a:active.fahrenheit-link {
+    #fahrenheit-link a:active {
         color: #0f0e0e;
+        text-decoration: underline;
       }
 
 .mainDegreesMax{
     font-weight: bolder;
 }
 
-
-a:link.fahrenheit-link {
-    text-decoration: none;
-  }
-  
-  a:visited.fahrenheit-link {
-    text-decoration: none;
-  }
-  
-  a:hover.fahrenheit-link {
-    text-decoration: underline;
-  }
-  
-  a:active.fahrenheit-link {
-    text-decoration: underline;
-  }
-
-
-  a:link.Ana {
+  #Ana a:link {
     color: whitesmoke;
   }
-  a:visited.Ana {
+  #Ana a:visited {
     color: whitesmoke;
   }
-  a:hover.Ana {
+  #Ana a:hover {
     color: whitesmoke;
   }
-  a:active.Ana {
+  #Ana a:active {
     color: whitesmoke;
   }
