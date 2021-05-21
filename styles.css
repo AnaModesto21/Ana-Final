@@ -89,13 +89,13 @@
         color: #f7f7f7;
       }
       a:visited {
-        color: #0f0e0e;
+        color: #f7f7f7;
       }
       a:hover {
         color: #f7f7f7;
       }
       a:active {
-        color: #c0f0fc;
+        color: #0f0e0e;
       }
 .mainDegreesMax{
     font-weight: bolder;
