@@ -23,6 +23,22 @@ function formatDate(date) {
     return `${day} ${hours}:${minutes}`;
   }
   
+  function displayForecast() {
+      let forecastElement = document.querySelector("#forecast");
+
+      forecastElement.innerHTML =`<div class="card text-center">
+      <h5 class="card-title text-center">Sun</h5>
+      <div class="card-body">
+        <i
+          class="fas fa-cloud-showers-heavy"
+          class="card-img-top"
+          alt="..."
+        ></i>
+        <p class="card-text" id="max">
+          <strong> 21º </strong> | <span id="min">16º</span>
+        </p>
+      </div>`;
+  }
   function displayWeatherC(response) {
     document.querySelector("#mCity").innerHTML = response.data.name;
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -48,6 +64,7 @@ function formatDate(date) {
     let city = document.querySelector("#city-input").value;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherC);
+
   }
   function searchLocation(position) {
     let apiKey = "68f3915a75420edb9d9f25f95e630a55";
@@ -99,6 +116,7 @@ function formatDate(date) {
   
   let celsiusTemperature = null;
   
+  
   let form = document.querySelector("#search-form");
   form.addEventListener("submit", handleSubmit);
   
@@ -107,4 +125,5 @@ function formatDate(date) {
   
   let celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", displayCelsiusTemperature);
-  
+
+displayForecast();
