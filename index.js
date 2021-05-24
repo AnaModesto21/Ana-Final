@@ -41,7 +41,7 @@ function formatDate(date) {
       </div>
       </div>`;
 })
-  };
+  }
   function displayWeatherC(response) {
     document.querySelector("#mCity").innerHTML = response.data.name;
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
