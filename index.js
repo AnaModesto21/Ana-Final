@@ -25,10 +25,10 @@ function formatDate(date) {
   
   function displayForecast() {
       let forecastElement = document.querySelector("#forecast");
-
-      forecastElement.innerHTML =`
-      <div class="row">
-      <div class="row-2">
+        let forecastHTML = `<div class="row">`;
+        forecastHTML = forecastHTML + 
+      `
+      <div class="col-2">
       <div class="weather-forecast-date">Sun</div>
       <div class="newIcon">
       <img src="http://openweathermap.org/img/wn/01d@2x.png" id="newIcon"/>
