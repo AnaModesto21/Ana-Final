@@ -31,7 +31,7 @@ function formatDate(date) {
         days.forEach(function (day) {
         forecastHTML = forecastHTML + 
       `
-      <div class="col-2">
+      <div class="col-6">
       <div class="weather-forecast-date">${day}</div>
       <div class="newIcon">
       <img src="http://openweathermap.org/img/wn/01d@2x.png" id="newIcon"/>
