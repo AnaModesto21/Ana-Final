@@ -26,7 +26,7 @@ function formatDate(date) {
   function displayForecast() {
       let forecastElement = document.querySelector("#forecast");
 
-      forecastElement.innerHTML =`<div class="card text-center">
+      forecastElement.innerHTML =`
       <h5 class="card-title text-center">Sun</h5>
       <div class="card-body">
         <i
