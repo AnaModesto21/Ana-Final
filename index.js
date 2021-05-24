@@ -31,7 +31,7 @@ function formatDate(date) {
         days.forEach(function (day) {
         forecastHTML = forecastHTML + 
       `
-      
+      <div class="col-2">
       <div class="weather-forecast-date">${day}</div>
       <div class="newIcon">
       <img src="http://openweathermap.org/img/wn/01d@2x.png" id="newIcon"/>
@@ -39,7 +39,6 @@ function formatDate(date) {
         <p class="card-text" id="max">
           <strong> 21º </strong> | <span id="min">16º</span>
         </p>
-     
       </div>`;
 });
 
