@@ -31,7 +31,7 @@ function formatDate(date) {
       <div class="row-2">
       <div class="weather-forecast-date">Sun</div>
       <div class="icon">
-      <img src="http://openweathermap.org/img/wn/01d@2x.png" id="icon"/>
+      <img src="http://openweathermap.org/img/wn/01d@2x.png" id="newIcon"/>
     </div>
         <p class="card-text" id="max">
           <strong> 21º </strong> | <span id="min">16º</span>
