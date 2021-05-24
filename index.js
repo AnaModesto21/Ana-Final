@@ -40,7 +40,9 @@ function formatDate(date) {
         </p>
       </div>
       </div>`;
-})
+});
+forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
   }
   function displayWeatherC(response) {
     document.querySelector("#mCity").innerHTML = response.data.name;
