@@ -92,3 +92,9 @@
 .weather-forecast-date{
     text-align: center;
 }
+
+.newIcon{
+    margin: 0 auto;
+    display: block;
+    font-size: small;
+}
