@@ -39,6 +39,7 @@ function formatDate(date) {
         <p class="card-text" id="max">
           <strong> 21º </strong> | <span id="min">16º</span>
         </p>
+      </div>
       </div>`;
 });
 
