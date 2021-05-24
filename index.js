@@ -27,7 +27,8 @@ function formatDate(date) {
       let forecastElement = document.querySelector("#forecast");
 
       forecastElement.innerHTML =`
-      <h5 class="card-title text-center">Sun</h5>
+      <div class="row">
+      <h5 class="col-2">Sun</h5>
       <div class="card-body">
         <i
           class="fas fa-cloud-showers-heavy"
@@ -37,6 +38,7 @@ function formatDate(date) {
         <p class="card-text" id="max">
           <strong> 21º </strong> | <span id="min">16º</span>
         </p>
+      </div>
       </div>`;
   }
   function displayWeatherC(response) {
