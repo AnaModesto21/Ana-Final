@@ -28,8 +28,8 @@ function formatDate(date) {
 
       forecastElement.innerHTML =`
       <div class="row">
-      <h5 class="col-2">Sun</h5>
-      <div class="card-body">
+      <div class="col-2">
+      <div class="weather-forecast-date">Sun</div>
         <i
           class="fas fa-cloud-showers-heavy"
           class="card-img-top"
