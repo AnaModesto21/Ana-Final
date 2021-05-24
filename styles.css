@@ -89,7 +89,7 @@
     font-weight: bolder;
     }
 
-.weather-forecast-date{
+.weather-forecast-date, .max, .min{
     text-align: center;
 }
 
