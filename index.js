@@ -47,7 +47,7 @@ forecastHTML = forecastHTML + `</div>`;
 forecastElement.innerHTML = forecastHTML;
   }
 
-  
+
   function displayWeatherC(response) {
     document.querySelector("#mCity").innerHTML = response.data.name;
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
