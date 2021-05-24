@@ -25,8 +25,9 @@ function formatDate(date) {
   
   function displayForecast() {
       let forecastElement = document.querySelector("#forecast");
+        
+        let days =["Mon", "Tue", "Wed", "Thu"];
         let forecastHTML = `<div class="row">`;
-        let days =["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
         days.forEach(function (day) {
         forecastHTML = forecastHTML + 
       `
@@ -41,8 +42,10 @@ function formatDate(date) {
       </div>
       </div>`;
 });
+
 forecastHTML = forecastHTML + `</div>`;
 forecastElement.innerHTML = forecastHTML;
+console.log(forecastHTML);
   }
   function displayWeatherC(response) {
     document.querySelector("#mCity").innerHTML = response.data.name;
