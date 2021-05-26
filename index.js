@@ -23,7 +23,7 @@ function formatDate(date) {
     return `${day} ${hours}:${minutes}`;
   }
   function dateFormatting(timestamp) {
-      let date = new day(timestamo * 1000);
+      let date = new day(timestamp * 1000);
       let day = date.getDay();
       let week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -40,7 +40,8 @@ function formatDate(date) {
     let forecastElement = document.querySelector("#forecast");
 
     let forecastHTML = `<div class="row">`;
-    forecast.forEach(function (forecastDate) {
+    forecast.forEach(function (forecastDate, index) {
+        if (index < 6) {
       forecastHTML =
         forecastHTML +
         `
@@ -52,7 +53,7 @@ function formatDate(date) {
           <p class="card-text" id="max">
             <strong> ${forecastDate.temp.max} </strong> | <span id="min">${forecastDate.temp.min}</span>
           </p>
-        </div>`;
+        </div>`;}
     });
     forecastHTML = forecastHTML + `</div>`;
     forecastElement.innerHTML = forecastHTML;
