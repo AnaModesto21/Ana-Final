@@ -24,27 +24,25 @@ function formatDate(date) {
   }
   
   function displayForecast() {
-      let forecastElement = document.querySelector("#forecast");
-        
-        let days =["Mon", "Tue", "Wed", "Thu"];
-        let forecastHTML = `<div class="row">`;
-        days.forEach(function (day) {
-        forecastHTML = forecastHTML + 
-      `
-      <div class="col-2">
-      <div class="weather-forecast-date">${day}</div>
-      <div class="newIcon">
-      <img src="http://openweathermap.org/img/wn/01d@2x.png" id="newIcon"/>
-    </div>
-        <p class="card-text" id="max">
-          <strong> 21º </strong> | <span id="min">16º</span>
-        </p>
+    let forecastElement = document.querySelector("#forecast");
+    let days = ["Mon", "Tue", "Wed", "Thu"];
+    let forecastHTML = `<div class="row">`;
+    days.forEach(function (day) {
+      forecastHTML =
+        forecastHTML +
+        `
+        <div class="col-2 text-center">
+        <div class="weather-forecast-date">${day}</div>
+        <div class="newIcon">
+        <img src="http://openweathermap.org/img/wn/01d@2x.png" id="newIcon"/>
       </div>
-      </div>`;
-});
-
-forecastHTML = forecastHTML + `</div>`;
-forecastElement.innerHTML = forecastHTML;
+          <p class="card-text" id="max">
+            <strong> 21º </strong> | <span id="min">16º</span>
+          </p>
+        </div>`;
+    });
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
   }
 
 
