@@ -40,7 +40,7 @@ function formatDate(date) {
     let forecastElement = document.querySelector("#forecast");
 
     let forecastHTML = `<div class="row">`;
-    week.forEach(function (forecastDate) {
+    forecast.forEach(function (forecastDate) {
       forecastHTML =
         forecastHTML +
         `
