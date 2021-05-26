@@ -22,22 +22,35 @@ function formatDate(date) {
   
     return `${day} ${hours}:${minutes}`;
   }
-  
+  function dateFormatting(timestamp) {
+      let day = new day(timestamo * 1000);
+      let date = date.getDay();
+      let week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+      return week[date];
+
+  }
+
+
   function displayForecast(response){
+    let forecast = response.data.daily;
+
+
+
     let forecastElement = document.querySelector("#forecast");
-    let days = ["Mon", "Tue", "Wed", "Thu"];
+
     let forecastHTML = `<div class="row">`;
-    days.forEach(function (day) {
+    days.forEach(function (forecastDate) {
       forecastHTML =
         forecastHTML +
         `
         <div class="col-2 text-center">
-        <div class="weather-forecast-date">${day}</div>
+        <div class="weather-forecast-date">${dateFormatting(forecastDate.dt)}</div>
         <div class="newIcon">
-        <img src="http://openweathermap.org/img/wn/01d@2x.png" id="newIcon"/>
+        <img src= "http://openweathermap.org/img/wn/"${forecastDate.weather[0].icon}@2x.png" id="newIcon"/>
       </div>
           <p class="card-text" id="max">
-            <strong> 21º </strong> | <span id="min">16º</span>
+            <strong> ${forecastDate.temp.max} </strong> | <span id="min">${forecastDate.temp.min}</span>
           </p>
         </div>`;
     });
