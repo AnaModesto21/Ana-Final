@@ -23,11 +23,11 @@ function formatDate(date) {
     return `${day} ${hours}:${minutes}`;
   }
   function dateFormatting(timestamp) {
-      let day = new day(timestamo * 1000);
-      let date = date.getDay();
+      let date = new day(timestamo * 1000);
+      let day = date.getDay();
       let week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-      return week[date];
+      return week[day];
 
   }
 
