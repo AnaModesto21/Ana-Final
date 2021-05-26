@@ -18,7 +18,7 @@ function formatDate(date) {
       "Friday",
       "Saturday"
     ];
-    let day = week[dayIndex];
+    let day = days[dayIndex];
   
     return `${day} ${hours}:${minutes}`;
   }
