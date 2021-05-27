@@ -53,7 +53,7 @@ function formatDate(date) {
           }@2x.png"">
           <br>
           <p class="card-text" id="max">
-            <strong> ${forecastDate.temp.max} </strong> | <span id="min">${forecastDate.temp.min}</span>
+            <strong> ${Math.round(forecastDate.temp.max)} </strong> | <span id="min">${Math.round(forecastDate.temp.min)}</span>
           </p>
         </div>
         </div>`;}
