@@ -48,8 +48,12 @@ function formatDate(date) {
         <div class="col-2 text-center">
         <div class="weather-forecast-date">${dateFormatting(forecastDate.dt)}</div>
         <div class="newIcon">
-        <img src= ${forecastDate.weather[0].icon} id="newIcon"/>
+        <img
+          src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
       </div>
+      forecastDate.weather[0].icon
           <p class="card-text" id="max">
             <strong> ${forecastDate.temp.max} </strong> | <span id="min">${forecastDate.temp.min}</span>
           </p>
