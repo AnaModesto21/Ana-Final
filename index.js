@@ -46,7 +46,7 @@ function formatDate(date) {
         forecastHTML +
         `
         <div class="col-2 text-center">${dateFormatting(forecastDate.dt)}
-        <div class="newIcon" style="opacity:1.0;>
+        <div class="newIcon">
         <img
           src="http://openweathermap.org/img/wn/${
             forecastDate.weather[0].icon
@@ -164,3 +164,4 @@ function formatDate(date) {
   let celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
+  search("Lisbon");
