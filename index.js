@@ -53,7 +53,6 @@ function formatDate(date) {
             forecastDate.weather[0].icon
           }@2x.png"
       </div>
-      forecastDate.weather[0].icon
           <p class="card-text" id="max">
             <strong> ${forecastDate.temp.max} </strong> | <span id="min">${forecastDate.temp.min}</span>
           </p>
