@@ -52,10 +52,11 @@ function formatDate(date) {
           src="http://openweathermap.org/img/wn/${
             forecastDate.weather[0].icon
           }@2x.png"
-      </div>
+      
           <p class="card-text" id="max">
             <strong> ${forecastDate.temp.max} </strong> | <span id="min">${forecastDate.temp.min}</span>
           </p>
+        </div>
         </div>`;}
     });
     forecastHTML = forecastHTML + `</div>`;
