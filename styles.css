@@ -91,6 +91,7 @@
 
 .weather-forecast-date, .max, .min{
     text-align: center;
+    font-size: 15px;
 }
 
 .newIcon{
