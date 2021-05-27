@@ -50,7 +50,7 @@ function formatDate(date) {
         <div class="newIcon">
         <img
           src="http://openweathermap.org/img/wn/${
-            forecastDay.weather[0].icon
+            forecastDate.weather[0].icon
           }@2x.png"
       </div>
       forecastDate.weather[0].icon
