@@ -45,8 +45,8 @@ function formatDate(date) {
       forecastHTML =
         forecastHTML +
         `
-        <div class="col-2 text-center">
-        <div class="weather-forecast-date">${dateFormatting(forecastDate.dt)}</div>
+        <div class="col-2 text-center">${dateFormatting(forecastDate.dt)}
+        /*<div class="weather-forecast-date">${dateFormatting(forecastDate.dt)}</div>*/
         <div class="newIcon">
         <img
           src="http://openweathermap.org/img/wn/${
