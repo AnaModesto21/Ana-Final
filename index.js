@@ -46,11 +46,11 @@ function formatDate(date) {
         forecastHTML +
         `
         <div class="col-2 text-center">${dateFormatting(forecastDate.dt)}
-        <div class="newIcon">
+        <div class="newIcon" style="opacity:1.0;>
         <img
           src="http://openweathermap.org/img/wn/${
             forecastDate.weather[0].icon
-          }@2x.png">
+          }@2x.png"">
           <br>
           <p class="card-text" id="max">
             <strong> ${forecastDate.temp.max} </strong> | <span id="min">${forecastDate.temp.min}</span>
