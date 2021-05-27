@@ -45,8 +45,7 @@ function formatDate(date) {
       forecastHTML =
         forecastHTML +
         `
-        <div class="row">
-        <div class="col-2 weekday">
+        <div class="col-2 text-center">
         <div class="weather-forecast-date">${dateFormatting(forecastDate.dt)}</div>
         <div class="newIcon">
         <img
@@ -57,7 +56,6 @@ function formatDate(date) {
           <p class="card-text" id="max">
             <strong> ${forecastDate.temp.max} </strong> | <span id="min">${forecastDate.temp.min}</span>
           </p>
-        </div>
         </div>`;}
     });
     forecastHTML = forecastHTML + `</div>`;
